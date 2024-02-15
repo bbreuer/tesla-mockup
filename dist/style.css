@@ -548,6 +548,10 @@ video {
   position: absolute;
 }
 
+.relative {
+  position: relative;
+}
+
 .inset-0 {
   inset: 0px;
 }
@@ -815,6 +819,14 @@ video {
     flex-direction: row;
   }
 
+  .sm\:items-end {
+    align-items: flex-end;
+  }
+
+  .sm\:justify-center {
+    justify-content: center;
+  }
+
   .sm\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
@@ -866,5 +878,11 @@ video {
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:justify-center {
+    justify-content: center;
   }
 } 
